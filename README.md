@@ -171,7 +171,7 @@ pnpm run format   # Format using Prettier
 ![Register](https://mern-auth-vert.vercel.app/screenshots/register.png)
 
 ### 🔑 Login Page  
-![Login](=https://mern-auth-vert.vercel.app/screenshots/login.png)
+![Login](https://mern-auth-vert.vercel.app/screenshots/login.png)
 
 ### ✉️ Activate Account Page  
 ![Activate Account](https://mern-auth-vert.vercel.app/screenshots/activate.png)
