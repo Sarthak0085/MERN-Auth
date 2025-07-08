@@ -50,7 +50,7 @@ const Activate = () => {
 
             if (data.success) {
                 toast.success('Account Activated successfully. Please login to continue.');
-                navigate('/login');
+                navigate('/auth?type=login');
             } else {
                 toast.error(data.message);
             }

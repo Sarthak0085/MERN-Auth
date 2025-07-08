@@ -4,7 +4,6 @@
 It supports **user registration**, **account activation**, **login**, **forgot password**, and **reset password** flows.  
 Authentication is handled using **JWT**, **cookies**, and secure **token-based flows**.
 
-
 ---
 
 ## 📁 Project Structure
@@ -166,22 +165,22 @@ pnpm run format   # Format using Prettier
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home](live-url/screenshot/home.png)
+![Home](https://mern-auth-vert.vercel.app/screenshot/home.png)
 
 ### 🧾 Register Page  
-![Register](live-url/screenshots/sign-up.png)
+![Register](https://mern-auth-vert.vercel.app/screenshots/register.png)
 
 ### 🔑 Login Page  
-![Login](live-url/screenshots/login.png)
+![Login](=https://mern-auth-vert.vercel.app/screenshots/login.png)
 
 ### ✉️ Activate Account Page  
-![Activate Account](live-url/screenshots/activate.png)
+![Activate Account](https://mern-auth-vert.vercel.app/screenshots/activate.png)
 
 ### ❓ Forgot Password Page  
-![Forgot Password](live-url/screenshots/forgot-password.png)
+![Forgot Password](https://mern-auth-vert.vercel.app/screenshots/forgot-password.png)
 
 ### 🔄 Reset Password Page  
-![Reset Password](live-url/screenshots/reset-password.png)
+![Reset Password](https://mern-auth-vert.vercel.app/screenshots/reset-password.png)
 
 ---
 

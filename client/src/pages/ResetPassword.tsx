@@ -53,7 +53,7 @@ const ResetPassword = () => {
 
             if (data.success) {
                 toast.success(data?.message);
-                navigate('/login');
+                navigate('/auth?type=login');
             } else {
                 toast.error(data.message);
             }
