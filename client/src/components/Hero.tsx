@@ -1,0 +1,44 @@
+import { useNavigate } from 'react-router-dom';
+import { assets } from '../assets/assets';
+import { useContext } from 'react';
+import { AppContext } from '../context/AppContext';
+
+const Hero = () => {
+    const navigate = useNavigate();
+
+    const { userData, isLoggedIn } = useContext(AppContext)!;
+
+    return (
+        <div className="flex flex-col items-center mt-24 px-4 text-center text-gray-800">
+            <img
+                src={assets.header_img}
+                alt="Header Image"
+                className="w-36 h-36 rounded-full mb-6"
+            />
+            <h1 className="flex items-center gap-2 text-xl md:text-3xl font-medium mb-2">
+                Hey {userData ? userData?.name : 'Developer'}
+                <img src={assets.hand_wave} alt="Hand Wave" className="w-8 aspect-square" />
+            </h1>
+
+            <h2 className="text-3xl sm:text-5xl font-semibold mb-3">Welcome to our app</h2>
+
+            <p className="mb-8 max-w-md">
+                Let's start with a quick product tour and we will have you up and running in no
+                time!
+            </p>
+
+            {!isLoggedIn && (
+                <button
+                    onClick={() => {
+                        navigate('/auth?type=register');
+                    }}
+                    className="flex gap-2 border border-gray-500 rounded-full px-8 py-2.5 hover:bg-gray-100 transition-all cursor-pointer"
+                >
+                    Get Started
+                    <img src={assets.arrow_icon} alt="Arrow Right" />
+                </button>
+            )}
+        </div>
+    );
+};
+export default Hero;
